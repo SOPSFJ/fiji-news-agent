@@ -1,0 +1,196 @@
+/* Main Styles for Fiji News Agent */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+    max-width: 1800px;
+}
+
+/* Header */
+header {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Cards */
+.card {
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+/* News List */
+.news-list {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.news-item {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.news-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.news-source {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.news-date {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.news-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-summary {
+    font-size: 0.9em;
+    color: #212529;
+}
+
+/* Status Log */
+.status-log {
+    height: 150px;
+    overflow-y: auto;
+    font-size: 0.85em;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.status-entry {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.status-time {
+    color: #6c757d;
+    margin-right: 10px;
+    font-family: monospace;
+}
+
+.status-msg {
+    color: #212529;
+}
+
+/* Summary and Analysis Boxes */
+.summary-box, .analysis-box {
+    height: 400px;
+    overflow-y: auto;
+    font-size: 0.9em;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    white-space: pre-line;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.spinner-container {
+    text-align: center;
+}
+
+/* Placeholder Text */
+.placeholder-text {
+    color: #6c757d;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Threat Analysis */
+.threat-item {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 193, 7, 0.1);
+}
+
+.threat-title {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.mitigation-strategy {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.strategy-type {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Category Badges */
+.category-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.category-politics {
+    background-color: #007bff;
+    color: white;
+}
+
+.category-community {
+    background-color: #28a745;
+    color: white;
+}
+
+.category-sports {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.category-crime {
+    background-color: #dc3545;
+    color: white;
+}
+
+.category-others {
+    background-color: #6c757d;
+    color: white;
+} 
